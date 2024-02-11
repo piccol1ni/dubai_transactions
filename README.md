@@ -1,2 +1,2 @@
 # dubai_transactions
-full information about dubai transactions 2023 year (Big data csv)
+Full information in file main, script can show you all information from Dubai Transactions from 2023 year, you can also check actual currency pair value, and avarange information about sales for every quarter. For using this you should download python3.10 use pandas, requests, csv, datatime(only for time checker), you can also use Dask (It will be faster for 3 sec), but it save files in many parts of file like part1, part2, part3 etc...
