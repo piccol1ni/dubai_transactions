@@ -109,6 +109,14 @@ if __name__=='__main__':
 
     first_profile = CurrencyChecker('03d5377c7f88c91d9bf86d18')
     
+    with open('2023_info.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        field = ["Total Sales 2023", "Total Budget 2023"]
+        writer.writerow(field)
+        writer.writerow([new_alalyze_2023.get_all_sales_2023(),
+                        round(new_alalyze_2023.get_all_sales_budget_2023() * first_profile.get_pair_value('AED', 'USD'), 2)])
+        
+    
     with open('quarter_info.csv', 'w', newline='') as file:
         writer = csv.writer(file)
         field = ["Quarters", "Quarter I, 2023", "Quarter II, 2023", "Quarter III, 2023", "Quarter IV, 2023"]
